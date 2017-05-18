@@ -1,0 +1,25 @@
+Messages:
+=========
+vote_del_D0_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D1] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }        from C0, C1                 recvd by C0, C1, C2, C3, C4
+vote_del_D0_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D1] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }        from         C2, C3         recvd by C0, C1, C2, C3, C4
+
+vote_del_D1_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }        from C0, C1                 recvd by C0, C1, C2, C3, C4
+vote_del_D1_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }        from         C2, C3         recvd by C0, C1, C2, C3, C4
+
+vote_add_E0_to_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0, D1, E0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }  from         C2, C3         recvd by C0, C1, C2, C3, C4
+
+vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D0, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }          from                 C4     recvd by C0, C1, C2, C3, C4
+
+vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D1, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }          from         C2, C3         recvd by         C2, C3, C4
+vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D1, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }          from                 C4     recvd by
+
+vote_del_D0_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }                from C0, C1                 recvd by C0, C1,         C4
+vote_del_D0_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }                from                 C4     recvd by
+
+vote_del_D1_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }                from         C2, C3         recvd by C0, C1, C2, C3, C4
+vote_del_D1_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }                from C0, C1                 recvd by C0, C1, C2, C3, C4
+vote_del_D1_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }                from                 C4     recvd by (already accumulated everywhere)
+
+vote_add_E0_to_1316: Vote { to: Block { v: 1317, mbrs: [C0-C4, E0] }, from: Block { v: 1316, mbrs: [C0-C4] } }                  from         C2, C3         recvd by C0, C1, C2, C3, C4
+vote_add_E0_to_1316: Vote { to: Block { v: 1317, mbrs: [C0-C4, E0] }, from: Block { v: 1316, mbrs: [C0-C4] } }                  from                 C4     recvd by C0, C1, C2, C3, C4
+

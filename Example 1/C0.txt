@@ -1,0 +1,77 @@
+C0 at start of step 4:
+======================
+Current: [ {v: 1314, mbrs: [C0-C4, D0, D1]} ]
+RT:      C0-C4
+Passed Candidate: None
+Received:
+    - vote_add_E0_to_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0, D1, E0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }    FROM C2, C3
+    - vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D0, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }            FROM C4
+    - vote_del_D1_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }          FROM C0, C1, C2, C3
+    - vote_del_D0_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D1] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }          FROM C0, C1
+
+C0 at end of step 4:
+====================
+Current: [ {v: 1315, mbrs: [C0-C4, D0]} ]
+RT:      C0-C4
+Passed Candidate: None
+
+
+
+C0 at start of step 6:
+======================
+Current: [ {v: 1315, mbrs: [C0-C4, D0]} ]
+RT:      C0-C4
+Passed Candidate: None
+Received:
+    - vote_add_E0_to_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0, D1, E0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }    FROM C2, C3
+    - vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D0, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }            FROM C4
+    - vote_del_D0_from_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D1] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }          FROM C0, C1, C2, C3
+    - vote_del_D0_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }                  FROM C0, C1
+    - vote_del_D1_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }                  FROM C2, C3
+
+C0 at end of step 6:
+====================
+Current: [ {v: 1315, mbrs: [C0-C4, D0]}, { v: 1315, mbrs: [C0-C4, D1] } ]
+RT:      C0-C4
+Passed Candidate: None
+
+
+
+C0 at start of step 8:
+======================
+Current: [ {v: 1315, mbrs: [C0-C4, D0]}, { v: 1315, mbrs: [C0-C4, D1] } ]
+RT:      C0-C4
+Passed Candidate: None
+Received:
+    - vote_add_E0_to_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0, D1, E0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }    FROM C2, C3
+    - vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D0, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }            FROM C4
+    - vote_del_D0_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }                  FROM C0, C1
+    - vote_del_D1_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D1] } }                  FROM C0, C1, C2, C3
+
+C0 at end of step 8:
+====================
+Current: [ { v: 1316, mbrs: [C0-C4] } ]
+RT:      C0-C4
+Passed Candidate: None
+
+
+
+C0 at start of step 11:
+=======================
+Current: [ { v: 1316, mbrs: [C0-C4] } ]
+RT:      C0-C4
+Passed Candidate: None
+Received:
+    - vote_add_E0_to_1314: Vote { to: Block { v: 1315, mbrs: [C0-C4, D0, D1, E0] }, from: Block { v: 1314, mbrs: [C0-C4, D0, D1] } }    FROM C2, C3
+    - vote_add_E0_to_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4, D0, E0] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }            FROM C4
+    - vote_del_D0_from_1315: Vote { to: Block { v: 1316, mbrs: [C0-C4] }, from: Block { v: 1315, mbrs: [C0-C4, D0] } }                  FROM C0, C1
+    - vote_add_E0_to_1316: Vote { to: Block { v: 1317, mbrs: [C0-C4, E0] }, from: Block { v: 1316, mbrs: [C0-C4] } }                    FROM C2, C3, C4
+
+C0 at end of step 11:
+=====================
+Current: [ { v: 1317, mbrs: [C0-C4, E0] } ]
+RT:      C0-C4
+Passed Candidate: None
+
+
+

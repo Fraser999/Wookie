@@ -1,0 +1,29 @@
+C0 at start of step 3:
+======================
+Current: [ {pfx: 1100, v: 1314, mbrs: [C0-C4]}, {pfx: 1101, v: 1297, mbrs: [D0-D4]} ]
+RT:      C0-C4, D0-D4
+Received:
+    - vote_del_D4_from_1297: Vote { to: Block { pfx: 1101, v: 1298, mbrs: [D0-D3] }, from: Block { pfx: 1101, v: 1297, mbrs: [D0-D4] } }
+
+C0 at end of step 3:
+====================
+Current: [ {pfx: 1100, v: 1314, mbrs: [C0-C4]}, {pfx: 1101, v: 1298, mbrs: [D0-D3]} ]
+RT:      C0-C4, D0-D3
+
+
+
+C0 at start of step 5:
+======================
+Current: [ {pfx: 1100, v: 1314, mbrs: [C0-C4]}, {pfx: 1101, v: 1298, mbrs: [D0-D3]} ]
+RT:      C0-C4, D0-D3
+Received:
+    - vote_del_D3_from_1297: Vote { to: Block { pfx: 1101, v: 1298, mbrs: [D0-D3] }, from: Block { pfx: 1101, v: 1297, mbrs: [D0-D4] } }
+
+C0 at end of step 3:
+====================
+Current: [ {pfx: 1100, v: 1314, mbrs: [C0-C4]}, {pfx: 1101, v: 1298, mbrs: [D0-D3]} ]
+RT:      C0-C4, D0-D3
+
+
+
+
